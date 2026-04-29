@@ -13,7 +13,10 @@ class Main {
         System.err.println("Insertion sort recursivo");
         System.err.println("-----------------------------------------------------------");
         InsertionSort.ordenar(array, array.length, new int[1]);
-
+        System.err.println("-----------------------------------------------------------");
+        System.err.println("Quick sort");
+        System.err.println("-----------------------------------------------------------");
+        QuickSort.ordenar(array, 0, array.length/2, new int[1]);
         
     }
 
