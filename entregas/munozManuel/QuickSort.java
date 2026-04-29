@@ -8,14 +8,14 @@ class QuickSort {
         int indicePivote = particionar(array, izquierda, derecha, profundidad[0]);
         System.out.println("--".repeat(profundidad[0])+"El indice pivote es: " + indicePivote);
         
-        System.err.println("--".repeat(profundidad[0])+"Inicio de llamada recursiva a la izquierda");
+        System.out.println("--".repeat(profundidad[0])+"Inicio de llamada recursiva a la izquierda");
         profundidad[0]++;
         ordenar(array, izquierda, indicePivote - 1, profundidad);
         profundidad[0]--;
         System.out.println("--".repeat(profundidad[0])+"Parada de llamada recursiva a la izquierda");
 
         
-        System.err.println("--".repeat(profundidad[0])+"Inicio de llamada recursiva a la derecha");
+        System.out.println("--".repeat(profundidad[0])+"Inicio de llamada recursiva a la derecha");
         profundidad[0]++;
         ordenar(array, indicePivote + 1, derecha, profundidad);
         profundidad[0]--;
