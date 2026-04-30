@@ -46,6 +46,15 @@ class QuickSort {
         System.out.println("--".repeat(profundidad)+"El valor en la posicion " + (i+1) + " se remplazo por el valor de la posicion " + derecha);
         array[derecha] = temporal;
         System.out.println("--".repeat(profundidad)+"El valor en la posicion " + derecha + " se remplaza por el valor temporal " + temporal);
+        System.out.print("--".repeat(profundidad)+ "El array: ");
+        printArray(array);
         return i + 1;
+    }
+
+    private static void printArray(int[] array){
+        for (int numero : array){
+            System.out.print(numero + " ");
+        }
+        System.out.println("");
     }
 }
